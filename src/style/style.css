@@ -1,0 +1,230 @@
+/* Reset de margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos gerais para o HTML */
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para o corpo da página */
+body{
+    background: linear-gradient(rgb(16,16,16,0.5), rgb(25,25,25,0.5)), url(../images/oficina.jpg);            
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+}
+
+/* Estilos para o cabeçalho */
+header{
+    width: 100%;
+    height: 7vw;
+    background: rgba(252, 231, 1, 0.947);
+}
+
+/* Estilos para o menu */
+.menu{
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* Estilos para o logo */
+.logo{
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+    margin-left: 50px;
+    padding-bottom: 20px;
+}
+
+/* Estilos para a lista de menu */
+.menu .lista-menu{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+/* Estilos para os links do menu */
+.menu .lista-menu a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    transition: 2ms ease-in;
+    position: relative;
+}
+
+/* Estilos para o efeito hover dos links do menu */
+.menu .lista-menu a::before{
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 2px;
+    background-color: wheat;
+    transition: all 1s ease;
+}
+
+.menu .lista-menu a:hover::before{
+    width: 100%;
+    background-color: rgb(247, 247, 3);
+}
+
+/* Estilos para o main */
+main{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Estilos para o conteúdo principal */
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(255, 228, 228);   
+}
+
+/* Estilos para o container */
+.container{
+    display: flex;
+}
+
+/* Estilos para as seções de serviços */
+.Troca, .Alinhamento, .Revisao{
+    background-color: rgb(255, 255, 255, 0.5);
+    margin: 20px;
+    width: 300px;  
+    border-radius: 10px;   
+}
+
+/* Estilos para as imagens */
+img{
+    width: 270px;
+    margin: 15px 15px 0 15px;  
+    border-radius: 10px;  
+}
+
+/* Estilos para os títulos das seções */
+.container h2{
+    text-align: center;
+    font-family: sans-serif;
+    margin: 15px;
+}
+
+/* Estilos para os parágrafos das seções */
+.container p{
+    text-align: center;
+    font-family: sans-serif;
+    margin: 15px;
+}
+
+/* Estilos para o botão "Saiba Mais" */
+.SaibaMais{
+    display: flex;
+    align-items: center;
+    background-color: #c7b701;
+    margin-left: 37%;
+    border: none;
+    padding: 7px;
+    color: white;
+    cursor: pointer;    
+}
+
+/* Estilos para o rodapé */
+footer{
+    background-color: black;
+    color: rgb(255, 228, 228);
+    padding: 20px 0;
+    font-size: 1.6rem;
+}
+
+/* Estilos para o conteúdo do rodapé */
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1350px;
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding: 20px;
+}
+
+/* Estilos para os formulários e contatos no rodapé */
+.footer-form, .footer-contact  {
+    flex: 1;
+    margin: 0 100 px;
+}
+
+.footer-form h3, .footer-contact h3 {
+    margin-bottom: 10px;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Estilos para os labels */
+label {
+    width: 45px;
+    margin-right: 1%;
+}
+
+/* Estilos para as informações do formulário */
+.form-infos {
+    display: flex;
+    width: 70%;
+    gap: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para os labels do formulário no rodapé */
+.footer-form label {
+    margin-bottom: 5px;
+}
+
+/* Estilos para os inputs do formulário no rodapé */
+.footer-form input {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1.4rem;
+}
+
+/* Estilos para o botão do formulário no rodapé */
+.footer-form button {
+    padding: 10px;
+    font-size: 1.6rem;
+    background-color: yellow;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+}
+
+/* Estilos para os parágrafos de contato no rodapé */
+.footer-contact p {
+    margin-bottom: 4px;
+}
